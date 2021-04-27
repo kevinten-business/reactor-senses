@@ -17,6 +17,7 @@
     <modules>
         <module>senses-core</module>
         <module>senses-reactor</module>
+        <module>senses-interface</module>
     </modules>
 
     <properties>
@@ -42,6 +43,11 @@
                 <artifactId>senses-reactor</artifactId>
                 <version>${project.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.kevinten</groupId>
+                <artifactId>senses-interface</artifactId>
+                <version>${project.version}</version>
+            </dependency>
 
             <dependency>
                 <groupId>io.vavr</groupId>
@@ -65,10 +71,12 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-rsocket</artifactId>
+                <version>${spring-boot.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-webflux</artifactId>
+                <version>${spring-boot.version}</version>
             </dependency>
 
             <!-- spring cloud -->
@@ -77,16 +85,19 @@
             <dependency>
                 <groupId>io.projectreactor</groupId>
                 <artifactId>reactor-test</artifactId>
+                <version>${reactor.version}</version>
                 <scope>test</scope>
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-test</artifactId>
+                <version>${spring-boot.version}</version>
                 <scope>test</scope>
             </dependency>
             <dependency>
                 <groupId>org.springframework.restdocs</groupId>
                 <artifactId>spring-restdocs-webtestclient</artifactId>
+                <version>${spring-boot.version}</version>
                 <scope>test</scope>
             </dependency>
 
